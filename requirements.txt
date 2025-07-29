@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+routeros_api
+python-jose[cryptography] # Assure l'installation des dépendances nécessaires pour JWT
+passlib[bcrypt]
+python-multipart
+pydantic
+pydantic-settings # Nécessaire pour BaseSettings
+python-dotenv # Pour charger les variables depuis .env
