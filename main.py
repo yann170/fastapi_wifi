@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from routers import mikrotik
 from models import auth # Importe vos modules de routes
 from routers import auth
-from config import settings
+from functools import lru_cache
+from config import Settings, settings # Assurez-vous d'importer la fonction get_settings
 
 app = FastAPI(title="Portail Captif MikroTik API")
 
