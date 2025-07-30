@@ -14,7 +14,7 @@ origins = [
     "http://localhost",             # Pour les tests directs de FastAPI sur la machine hôte
     "http://localhost:8500",        # Si vous testez FastAPI sur 8000
     "http://localhost:8300",
-    "http://1192.168.50.252:443"
+    "https://1192.168.50.252:443"
     # Si vous testez votre frontend via python -m http.server 8080
 ]
 
