@@ -1,4 +1,4 @@
-# main.py
++# main.py
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routers import mikrotik
@@ -13,7 +13,9 @@ app = FastAPI(title="Portail Captif MikroTik API")
 origins = [
     "http://localhost",             # Pour les tests directs de FastAPI sur la machine hôte
     "http://localhost:8500",        # Si vous testez FastAPI sur 8000
-    "http://localhost:8300",        # Si vous testez votre frontend via python -m http.server 8080
+    "http://localhost:8300",
+    "http://1192.168.50.252:443"
+    # Si vous testez votre frontend via python -m http.server 8080
 ]
 
 app.add_middleware(
